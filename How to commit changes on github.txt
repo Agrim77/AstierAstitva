@@ -1,0 +1,2 @@
+COMMAND TO COMMIT CHANGES:
+make git m="your message"

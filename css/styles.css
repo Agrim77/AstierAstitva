@@ -94,8 +94,11 @@ h2 {
 }
 
 h3 {
-    color: #393939;
-    font: 700 1.75rem/2rem "Raleway", sans-serif;
+    font-size: 36px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    font: 700 2.25rem/2.75rem "Raleway", sans-serif;
 }
 
 h4 {
@@ -708,6 +711,17 @@ screen and (-ms-high-contrast: none) {
     }
 }
 
+.logo {
+    display: inline-flex;
+    /* justify-content: flex-start; */
+    /* height: 3rem; */
+    /* margin-top: 25px; */
+}
+
+.logo h3 {
+    margin-top: 0.8rem;
+}
+
 
 /**************************/
 
@@ -872,6 +886,67 @@ screen and (-ms-high-contrast: none) {
 
 .header .p-large {
     margin-bottom: 1.875rem;
+}
+
+
+/* Services Section
+--------------------------------*/
+
+#services {
+    padding: 60px 0 40px 0;
+}
+
+#services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+#services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#services .icon i {
+    font-size: 36px;
+    line-height: 1;
+}
+
+#services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#services .title a {
+    color: #111;
+}
+
+#services .box:hover .title a {
+    color: #1bb1dc;
+}
+
+#services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 
@@ -1524,7 +1599,8 @@ screen and (-ms-high-contrast: none) {
     color: rgb(0, 0, 0);
 }
 
-#call-to-action .cta-btn {
+
+/* #call-to-action .cta-btn {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -1541,6 +1617,24 @@ screen and (-ms-high-contrast: none) {
 #call-to-action .cta-btn:hover {
     background: #1bb1dc;
     border: 3px solid #1bb1dc;
+} */
+
+#call-to-action .btn-solid-reg {
+    display: inline-block;
+    padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+    border: 0.125rem solid #00bfd8;
+    border-radius: 2rem;
+    background-color: #00bfd8;
+    color: #fff;
+    font: 700 0.75rem/0 "Raleway", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#call-to-action .btn-solid-reg:hover {
+    background-color: transparent;
+    color: #00bfd8;
+    text-decoration: none;
 }
 
 
@@ -1708,7 +1802,7 @@ screen and (-ms-high-contrast: none) {
     text-align: center;
     font-weight: 700;
     position: relative;
-    font-family: "Montserrat", sans-serif;
+    font: 700 2.25rem/2.75rem "Raleway", sans-serif;
 }
 
 .section-header p {
